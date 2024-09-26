@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sktodolist.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class=" todo-app">
+            <h2> TO-DO-LIST <img src="download.jpg"></h2>
+
+
+            <div class="ROW">
+                <input type="text" id="input-text" placeholder="Add a new task">
+                <button onclick="addtask()">Add </button>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openList(event, 'All')">All</button>
+                <button class="tablinks" onclick="openList(event, 'Pending')">Pending</button>
+                <button class="tablinks" onclick="openList(event, 'Completed')">Completed</button>
+            </div>
+
+            <div id="All" class="tabcontent">
+                <div class="box">
+                    <ul id="list-container-All">
+                    </ul>
+                </div>
+            </div>
+
+            <div id="Pending" class="tabcontent">
+                <div class="box">
+                    <ul id="list-container-Pending">
+
+                    </ul>
+                </div>
+            </div>
+
+            <div id="Completed" class="tabcontent">
+                <div class="box">
+                    <ul id="list-container-Completed">
+                    </ul>
+                </div>
+            </div>
+
+
+            <ul id="list-container">
+                <!-- <li class="check">task1</li>
+                    <li> task2</li>
+                    <li>task3</li>
+                    <li>task4</li>-->
+            </ul>
+        </div>
+
+    </div>
+    </div>
+    <script src="sktodo.js"></script>
+</body>
+
+</html>
